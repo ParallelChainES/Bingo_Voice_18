@@ -1,86 +1,50 @@
+/* Full background setup */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #1a1a1a;
-  color: #f0f0f0;
   margin: 0;
   padding: 0;
-}
-header {
-  background-color: #000;
-  color: #ffc600;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 2em;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1em;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-main {
-  padding: 2em;
-}
-h1 {
-  text-align: center;
-  color: #ffc600;
-}
-.game-grid {
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  flex-wrap: wrap;
-  margin-top: 2em;
-}
-.game-card {
-  background-color: #2a2a2a;
-  padding: 1em;
-  border-radius: 8px;
-  cursor: pointer;
-  width: 180px;
-  text-align: center;
-  transition: transform 0.2s;
-}
-.game-card:hover {
-  transform: scale(1.05);
-}
-.game-card img {
-  width: 100%;
-  border-radius: 4px;
+  background: url("casino-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
 }
 
-/* Modal styles */
+/* Modal styling */
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.85);
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 9999;
 }
+
 .modal-content {
   background: #fff;
   color: #000;
   padding: 2em;
-  border-radius: 8px;
-  max-width: 400px;
+  border-radius: 10px;
   text-align: center;
-  position: relative;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
 }
-.close {
-  position: absolute;
-  top: 1em;
-  right: 1em;
-  font-size: 1.5em;
+
+button {
+  background: #ffc600;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  border-radius: 6px;
   cursor: pointer;
+  margin-top: 1em;
 }
+
+button:hover {
+  background: #ffde55;
+}
+
 .hidden {
   display: none;
 }
