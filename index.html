@@ -3,52 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bingo Voice Casino Demo</title>
+  <title>Bingo Voice +18 – Casino Access</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">🎲 ParallelChain Casino</div>
-    <nav>
-      <ul>
-        <li><a href="#">Games</a></li>
-        <li><a href="#">Promotions</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <h1>Top Games</h1>
-    <div class="game-grid">
-      <div class="game-card" onclick="openModal()">
-        <img src="https://opengameart.org/sites/default/files/slot_machine_icon.png" alt="Slot Machine"/>
-        <p>Slot Machine</p>
-      </div>
-      <div class="game-card" onclick="openModal()">
-        <img src="https://opengameart.org/sites/default/files/roulette_icon_0.png" alt="Roulette"/>
-        <p>Roulette</p>
-      </div>
-      <div class="game-card" onclick="openModal()">
-        <img src="https://opengameart.org/sites/default/files/cards_icon.png" alt="Blackjack"/>
-        <p>Blackjack</p>
-      </div>
-    </div>
-  </main>
-
-  <!-- Modal -->
-  <div id="modal" class="modal hidden">
+  <!-- Modal on page load -->
+  <div id="modal" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
       <h2>Age Verification</h2>
-      <p>To access this content, please verify that you are over 18 using your voice.</p>
+      <p>To access this site, please verify you are over 18 using your voice.</p>
       <button id="recordBtn">Start Verification</button>
       <p id="status"></p>
       <div id="result" class="hidden">
         <p id="message"></p>
         <div id="access" class="hidden">
           <h3>✅ Access granted!</h3>
-          <p>Enjoy the game responsibly.</p>
+          <p>Welcome to the casino demo site.</p>
         </div>
       </div>
     </div>
