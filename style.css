@@ -1,4 +1,4 @@
-/* Full background setup */
+/* Fondo completo con imagen */
 body {
   margin: 0;
   padding: 0;
@@ -7,14 +7,14 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Modal styling */
+/* Modal centrado */
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +28,7 @@ body {
   border-radius: 10px;
   text-align: center;
   max-width: 400px;
-  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
 button {
