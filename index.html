@@ -1,36 +1,56 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bingo Voice +18</title>
+  <title>Bingo Voice Casino Demo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Bingo Voice +18</h1>
-    <p>¿Eres mayor de 18 años?</p>
-    <button id="startBtn">Sí, soy mayor de edad</button>
+  <header>
+    <div class="logo">🎲 ParallelChain Casino</div>
+    <nav>
+      <ul>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Promotions</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div id="verification" class="hidden">
-      <p>Di la siguiente frase:</p>
-      <p class="phrase">"Confirmo que soy mayor de edad"</p>
-      <button id="recordBtn">Iniciar grabación</button>
-      <p id="status"></p>
-    </div>
-
-    <div id="result" class="hidden">
-      <p id="message"></p>
-      <div id="explanation" class="hidden">
-        <h2>¿Qué es Bingo Voice?</h2>
-        <p>Bingo Voice es una solución que utiliza inteligencia artificial para estimar la edad del usuario a través de su voz. Está diseñada para ofrecer verificación de edad sin necesidad de documentos, protegiendo la privacidad del usuario.</p>
+  <main>
+    <h1>Top Games</h1>
+    <div class="game-grid">
+      <div class="game-card" onclick="openModal()">
+        <img src="https://static-cdn.bwin.com/Images/2022/5/5/17301913-slots.webp" alt="Slot Game"/>
+        <p>Slot Machine</p>
+      </div>
+      <div class="game-card" onclick="openModal()">
+        <img src="https://static-cdn.bwin.com/Images/2021/8/24/15546803-roulette.webp" alt="Roulette"/>
+        <p>Roulette</p>
+      </div>
+      <div class="game-card" onclick="openModal()">
+        <img src="https://static-cdn.bwin.com/Images/2021/8/24/15546787-blackjack.webp" alt="Blackjack"/>
+        <p>Blackjack</p>
       </div>
     </div>
+  </main>
 
-    <a href="#" id="noMicLink">No tengo micrófono</a>
-    <div id="qrContainer" class="hidden">
-      <p>Escanea este código QR para continuar la prueba en tu móvil:</p>
-      <canvas id="qrcode"></canvas>
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Age Verification</h2>
+      <p>To access this content, please verify that you are over 18 using your voice.</p>
+      <button id="recordBtn">Start Verification</button>
+      <p id="status"></p>
+      <div id="result" class="hidden">
+        <p id="message"></p>
+        <div id="access" class="hidden">
+          <h3>✅ Access granted!</h3>
+          <p>Enjoy the game responsibly.</p>
+        </div>
+      </div>
     </div>
   </div>
 
